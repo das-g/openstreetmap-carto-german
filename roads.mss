@@ -2360,13 +2360,13 @@
 }
 
 #roads-text-ref-low-zoom {
-  [highway = 'motorway'][length <= 8] {
+  [highway = 'motorway'][width <= 8] {
     [zoom >= 10][zoom < 13] {
-      shield-name: "[ref]";
+      shield-name: "[refs]";
       shield-size: 10;
       shield-fill: #fff;
       shield-placement: line;
-      shield-file: url("symbols/Bundesautobahn[length].png");
+      shield-file: url("symbols/Bundesautobahn[width].png");
       shield-spacing: 750;
       shield-min-distance: 30;
       shield-face-name: @bold-fonts;
@@ -2376,11 +2376,11 @@
   }
 
   [highway = 'trunk'][zoom >= 11][zoom < 13] {
-    shield-name: "[ref]";
+    shield-name: "[refs]";
     shield-size: 10;
     shield-fill: #000;
     shield-placement: line;
-    shield-file: url("symbols/B[length].png");
+    shield-file: url("symbols/B[width].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @book-fonts;
@@ -2389,11 +2389,11 @@
   }
 
   [highway = 'primary'][zoom >= 11][zoom < 13] {
-    shield-name: "[ref]";
+    shield-name: "[refs]";
     shield-size: 10;
     shield-fill: #000;
     shield-placement: line;
-    shield-file: url("symbols/B[length].png");
+    shield-file: url("symbols/B[width].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @book-fonts ;
@@ -2402,11 +2402,11 @@
   }
 
   [highway = 'secondary'][zoom >= 12][zoom < 13] {
-    shield-name: "[ref]";
+    shield-name: "[refs]";
     shield-size: 10;
     shield-fill: #000;
     shield-placement: line;
-    shield-file: url("symbols/L[length].png");
+    shield-file: url("symbols/L[width].png");
     shield-spacing: 750;
     shield-min-distance: 40;
     shield-face-name: @book-fonts;
@@ -2416,13 +2416,13 @@
 }
 
 #roads-text-ref {
-  [highway = 'motorway'][length <= 8] {
+  [highway = 'motorway'][width <= 8] {
     [zoom >= 13] {
-      shield-name: "[ref]";
+      shield-name: "[refs]";
       shield-size: 10;
       shield-fill: #fff;
       shield-placement: line;
-      shield-file: url("symbols/Bundesautobahn[length].png");
+      shield-file: url("symbols/Bundesautobahn[width].png");
       shield-spacing: 750;
       shield-min-distance: 30;
       shield-face-name: @bold-fonts;
@@ -2432,11 +2432,11 @@
   }
 
   [highway = 'trunk'][zoom >= 13] {
-    shield-name: "[ref]";
+    shield-name: "[refs]";
     shield-size: 10;
     shield-fill: #000;
     shield-placement: line;
-    shield-file: url("symbols/B[length].png");
+    shield-file: url("symbols/B[width].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @book-fonts;
@@ -2445,11 +2445,11 @@
   }
 
   [highway = 'primary'][zoom >= 13] {
-    shield-name: "[ref]";
+    shield-name: "[refs]";
     shield-size: 10;
     shield-fill: #000;
     shield-placement: line;
-  shield-file: url("symbols/B[length].png"); 
+  shield-file: url("symbols/B[width].png"); 
   shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @book-fonts;
@@ -2458,11 +2458,11 @@
   }
 
   [highway = 'secondary'][bridge = 'no'][zoom >= 13] {
-    shield-name: "[ref]";
+    shield-name: "[refs]";
     shield-size: 10;
     shield-fill: #000;
     shield-placement: line;
-    shield-file: url("symbols/L[length].png");
+    shield-file: url("symbols/L[width].png");
   shield-spacing: 750;
     shield-min-distance: 40;
     shield-face-name: @book-fonts;
@@ -2471,11 +2471,11 @@
   }
 
   [highway = 'tertiary'][bridge = 'no'][zoom >= 13] {
-    shield-name: "[ref]";
+    shield-name: "[refs]";
     shield-size: 10;
     shield-fill: #000;
     shield-placement: line;
-    shield-file: url("symbols/L[length].png");   
+    shield-file: url("symbols/L[width].png");   
     shield-spacing: 750;
     shield-min-distance:40;
     shield-face-name: @book-fonts;
@@ -2486,7 +2486,7 @@
   [highway = 'unclassified'],
   [highway = 'residential'] {
     [zoom >= 15][bridge = 'no'] {
-      text-name: "[ref]";
+      text-name: "[refs]";
       text-size: 10;
       text-fill: #000;
       text-face-name: @book-fonts;
@@ -2500,7 +2500,7 @@
   [highway = 'runway'],
   [highway = 'taxiway'] {
     [zoom >= 15][bridge = 'no'] {
-      text-name: "[ref]";
+      text-name: "[refs]";
       text-size: 10;
       text-fill: #333;
       text-spacing: 750;
